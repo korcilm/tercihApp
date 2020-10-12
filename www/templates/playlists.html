@@ -1,0 +1,24 @@
+<ion-view view-title="Tercih Robotu">
+	<ion-content>
+
+		<div class="list list-inset">
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" placeholder="Bölüm Ara" ng-model='universite' ng-change='bul(universite)'>
+			</label>
+		</div>
+
+		
+
+		<div class="list" ng-if='universite'>
+			<a class="item" ng-repeat="okul in okullar" href="#/app/playlists/{{$index}}">
+				<i class="fas fa-graduation-cap"></i>
+				<b>{{okul.bolum}}</b>					
+				<span class="badge badge-stable">{{okul.basari_sirasi}}</span><br>
+				{{okul.universite}}	
+			</a>
+
+		</div>
+		
+	</ion-content>
+</ion-view>

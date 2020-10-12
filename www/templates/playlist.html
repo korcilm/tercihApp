@@ -1,0 +1,53 @@
+<ion-view view-title="{{bilgi.bolum}}">
+	<ion-content>
+
+		<div class="list card">
+
+			<div class="item item-avatar">
+				<img src="img/school.png" >
+				<h2><b>{{bilgi.universite}}</b></h2>
+				<p>{{bilgi.fakulte}}</p>
+			</div>
+
+			<div class="item item-body">
+				<h2><b>{{bilgi.bolum}}</b></h2>
+				<img src="img/school.png" style="margin-left: 100px;">
+				
+
+				<a class="item" href="">
+					<i class="icon ion-person-stalker"></i>
+					Başarı Sırası
+					<span class="badge badge-dark">{{bilgi.basari_sirasi}}</span>
+				</a>
+
+				<a class="item" href="">
+					<i class="icon ion-person-stalker"></i>
+					Kontenjan
+					<span class="badge badge-assertive">{{bilgi.kontenjan}}</span>
+				</a>
+
+				<a class="item" href="">
+					<i class="icon ion-person-stalker"></i>
+					Yerleşen
+					<span class="badge badge-balanced">{{bilgi.yerlesen}}</span>
+				</a>
+
+				<a class="item" href="" ng-if='bilgi.puan_turu'>
+					<i class="icon ion-person-stalker"></i>
+					Puan Türü
+					<span class="badge badge-calm">{{bilgi.puan_turu}}</span>
+				</a>
+
+				<a class="item" href="">
+					<i class="icon ion-person-stalker"></i>
+					Burs Türü
+					<span class="badge badge-royal">{{bilgi.burs_turu}}</span>
+				</a>
+
+			</div>
+
+		</div>
+
+
+	</ion-content>
+</ion-view>
